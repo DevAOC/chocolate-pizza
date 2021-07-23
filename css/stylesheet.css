@@ -1,4 +1,4 @@
-body {
+/* body {
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -6,11 +6,69 @@ body {
   align-items: center;
   text-align: left;
   padding: 0 20px;
+} */
+body {
+  display: flex;
+  flex-direction: column;
+}
+#hdBrand {
+  font-size: 15px;
+}
+header {
+  background-color: gray;
+  display: flex;
+  height: 90px;
+  min-height: fit-content;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#hdBrand {
+  font-size: 15px;
+}
+#container {
+  width: 960px;
+}
+section {
+  width: 960px;
+  display: flex;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+ul {
+  display: flex;
+}
+h2{
+  font-size: 150px;
+  font-weight: 900;
+}
+main, footer {
+  position: center;
+  width: 901px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
 }
 #chocPizza {
   font-size: 40px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+}
+#iconList {
+  /* display: flex; */
+  flex-direction: row; 
+  justify-content: right;
+  /* /* align-items: right; */
+  text-align: right;
+  /* padding: 10 20px;
 }
 .fa {
   padding: 20px;
@@ -20,34 +78,58 @@ body {
   text-decoration: none;
   margin: 5px 2px;
 }
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
+
 .fa:hover {
   opacity: 0.7;
+}
+/* Start */
+
+/* All elements of the header */
+
+
+/* ul {
+  width: 760px;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+} */
+/* li {
+  font-size: large;
+  margin-left: 4%;
+  margin-right: 6%;
+} */
+
+/* All elements of the main */
+
+main > section {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Elements of the second section */
+#secondSection {
+  justify-content: space-between;
+}
+/* Elements of the third section */
+#thirdSection {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+article {
+  width: 450px;
+  overflow: scroll;
+  height: 370px;
+  margin-top: 15px;
+}
+/* Elements of the article */
+h3 {
+  font-size: large;
+}
+
+/* Footer */
+footer {
+  background-color: gray;
+  width: 100%;
+  margin-top: 15px;
+  height: 125px;
 }
